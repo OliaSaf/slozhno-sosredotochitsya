@@ -196,7 +196,7 @@
   background-color: var(--accent-color);
 }
 
-.block__card-list:last-of-type .title-decor{
+h4.title-decor {
   font-weight: 400;
 }
 

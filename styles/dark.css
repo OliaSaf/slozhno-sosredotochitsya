@@ -32,7 +32,7 @@
     --decor-color: var(--accent-color);
   }
 
-  .theme_auto .decorated-element{
+  .theme_auto .decorated-element {
     display: block;
   }
 }

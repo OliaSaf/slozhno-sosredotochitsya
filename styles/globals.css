@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-body,
+body {
+  min-inline-size: 375px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,

@@ -17,11 +17,12 @@
   --title-color: #db00ff;
   --shadow-color: var(--accent-color);
   --decor-color: var(--accent-color);
+  --visibility: block;
+  --border-color: rgba(255, 0, 112, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root,
-  .theme_auto {
+  :root {
     --accent-color: #ff0070;
     --bg-color: #000028;
     --bg-image: url(../images/cover-image-dark.png);
@@ -30,15 +31,9 @@
     --title-color: #db00ff;
     --shadow-color: var(--accent-color);
     --decor-color: var(--accent-color);
+    --visibility: block;
+    --border-color: rgba(255, 0, 112, 0.4);
   }
-
-  .theme_auto .decorated-element {
-    display: block;
-  }
-}
-
-.theme_dark .decorated-element {
-  display: block;
 }
 
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */

@@ -12,5 +12,17 @@
   --title-color: #db00ff;
   --shadow-color: var(--accent-color);
   --decor-color: var(--accent-color);
-  --main-font: "IBM Plex mono", Arial, Helvetica, sans-serif;
+  --main-font: "IBM Plex mono", Courier, monospace;
+  --visibility: block;
+  --border-color: rgba(255, 0, 112, 0.4);
+}
+
+/* при указании :root вместо селекторов класса в светлой теме
+не менялся цвет тени при указанном размере экрана */
+
+@media (min-width: 1024px) {
+  .header__title,
+  .footer__title {
+    --shadow-color: #ff0070;
+  }
 }

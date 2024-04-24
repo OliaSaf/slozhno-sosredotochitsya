@@ -7,8 +7,8 @@
 }
 
 body {
-  min-inline-size: 375px;
   margin: 0 auto;
+  min-inline-size: 375px;
 }
 
 h1,
@@ -18,7 +18,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
 }

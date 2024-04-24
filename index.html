@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
+
   <body class="page">
     <header class="header decorated-zone">
-      <div class="decorated-element" aria-hidden="true"></div>
+      <span class="decorated-element" aria-hidden="true"></span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -46,13 +47,15 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">no focus</h1>
-      <p class="header__description title-decor">
-        Что делать, когда не можешь делать ничего<br />Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </p>
+      <h1 class="header__title accent__title">no focus</h1>
+      <div class="header__description title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
+      </div>
     </header>
-    <script src="./scripts/script.js"></script>
     <main class="content">
       <section class="block">
         <h2 class="block__title">Почему сосредоточиться так сложно</h2>
@@ -147,7 +150,7 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="block__section">
+        <article class="block__section">
           <h3 class="title-decor">
             5 простых (на самом деле не очень) советов
           </h3>
@@ -226,11 +229,14 @@
               </article>
             </li>
           </ul>
-        </div>
+        </article>
       </section>
       <section class="block__gallery">
         <h2 class="title-decor">А можно в картинках?</h2>
         <div class="block__gallery-list">
+          <!-- При замене div на ul и оборачивании каждого img в li появлялись лишние отступы
+            в высоту, что ломало верстку. Не получилось исправить это с помощью разных классов
+            и свойств у ul, li, img -->
           <img
             class="block__gallery-list-item"
             src="./images/sunset.png"
@@ -265,7 +271,8 @@
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <h2 class="footer__title">focus</h2>
+      <h2 class="footer__title accent__title">focus</h2>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
